@@ -27,9 +27,6 @@ class Perceptron:
 
     def process_sample(self, sample):
         delta = self.find_delta(sample)
-
-        # print(str(self.weights) + " : " + str(self.threshold_weight) + " : delta " + str(delta))
-
         classified = False
         if delta == 0:
             classified = True
