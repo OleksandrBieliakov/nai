@@ -1,0 +1,459 @@
+
+This is a good article. Click here for more information. Listen to this article
+PHP
+From Wikipedia, the free encyclopedia
+Jump to navigationJump to search
+This article is about the scripting language. For other uses, see PHP (disambiguation).
+PHP
+PHP-logo.svg
+Paradigm	Imperative, functional, object-oriented, procedural, reflective
+Designed by	Rasmus Lerdorf
+Developer	The PHP Development Team, Zend Technologies
+First appeared	1995; 25 years ago[1]
+Stable release
+7.4.5[2] / April 16, 2020; 3 days ago
+Typing discipline	Dynamic, weak
+since version 7.0:
+
+Gradual[3]
+Implementation language	C (primarily; some components C++)
+OS	Unix-like, Windows
+License	PHP License (most of Zend engine under Zend Engine License)
+Filename extensions	.php, .phtml, .php3, .php4, .php5, .php7, .phps, .php-s, .pht, .phar
+Website	www.php.net
+Major implementations
+Zend Engine, HHVM, Phalanger, Quercus, Parrot
+Influenced by
+Perl, C, C++, Java, Tcl,[1] JavaScript, Hack[4]
+Influenced
+Hack
+ PHP Programming at Wikibooks
+PHP is a popular general-purpose scripting language that is especially suited to web development[5]. It was originally created by Rasmus Lerdorf in 1994;[6] the PHP reference implementation is now produced by The PHP Group.[7] PHP originally stood for Personal Home Page,[6] but it now stands for the recursive initialism PHP: Hypertext Preprocessor.[8]
+
+PHP code is usually processed on a web server by a PHP interpreter implemented as a module, a daemon or as a Common Gateway Interface (CGI) executable. On a web server, the result of the interpreted and executed PHP code – which may be any type of data, such as generated HTML or binary image data – would form the whole or part of a HTTP response. Various web template systems, web content management systems, and web frameworks exist which can be employed to orchestrate or facilitate the generation of that response. Additionally, PHP can be used for many programming tasks outside of the web context, such as standalone graphical applications[9] and robotic drone control.[10] Arbitrary PHP code can also be interpreted and executed via command line interface (CLI).
+
+The standard PHP interpreter, powered by the Zend Engine, is free software released under the PHP License. PHP has been widely ported and can be deployed on most web servers on almost every operating system and platform, free of charge.[11]
+
+The PHP language evolved without a written formal specification or standard until 2014, with the original implementation acting as the de facto standard which other implementations aimed to follow. Since 2014, work has gone on to create a formal PHP specification.[12]
+
+As of April 2020, over half of sites on the web using PHP are still on discontinued/"EOLed"[13] version 5.6 or older;[14] and with version 7.0 and 7.1 over 68%, that are neither officially supported by The PHP Development Team,[15] while security support is provided by third parties, such as Debian (up to June 2020 for PHP 5).[16] Because of the popularity of PHP that means at least 53% of the websites in the world run on implementations of languages no longer supported by their designers. In addition, PHP version 7.2, the most popular supported PHP version, will stop getting security updates on November 30, 2020.[13]
+
+
+Contents
+1	History
+1.1	Early history
+1.2	PHP 3 and 4
+1.3	PHP 5
+1.4	PHP 6 and Unicode
+1.5	PHP 7
+1.6	Release history
+2	Mascot
+3	Syntax
+3.1	Data types
+3.2	Functions
+3.3	PHP Objects
+4	Implementations
+5	Licensing
+6	Development and community
+7	Installation and configuration
+8	Use
+9	Security
+10	See also
+11	References
+12	Further reading
+History
+Early history
+
+
+
+Rasmus Lerdorf, who wrote the original Common Gateway Interface (CGI) component, together with Andi Gutmans and Zeev Suraski, who rewrote the parser that formed PHP 3.
+PHP development began in 1994 when Rasmus Lerdorf wrote several Common Gateway Interface (CGI) programs in C,[17][18][19] which he used to maintain his personal homepage. He extended them to work with web forms and to communicate with databases, and called this implementation "Personal Home Page/Forms Interpreter" or PHP/FI.
+
+PHP/FI could be used to build simple, dynamic web applications. To accelerate bug reporting and improve the code, Lerdorf initially announced the release of PHP/FI as "Personal Home Page Tools (PHP Tools) version 1.0" on the Usenet discussion group comp.infosystems.www.authoring.cgi on June 8, 1995.[20][21] This release already had the basic functionality that PHP has today. This included Perl-like variables, form handling, and the ability to embed HTML. The syntax resembled that of Perl, but was simpler, more limited and less consistent.[7]
+
+An example of the early PHP syntax:
+
+<!--include /text/header.html-->
+
+<!--getenv HTTP_USER_AGENT-->
+<!--ifsubstr $exec_result Mozilla-->
+  Hey, you are using Netscape!<p>
+<!--endif-->
+
+<!--sql database select * from table where user='$username'-->
+<!--ifless $numentries 1-->
+  Sorry, that record does not exist<p>
+<!--endif exit-->
+  Welcome <!--$user-->!<p>
+  You have <!--$index:0--> credits left in your account.<p>
+
+<!--include /text/footer.html-->
+Early PHP was not intended to be a new programming language, and grew organically, with Lerdorf noting in retrospect: "I don't know how to stop it, there was never any intent to write a programming language [...] I have absolutely no idea how to write a programming language, I just kept adding the next logical step on the way."[22] A development team began to form and, after months of work and beta testing, officially released PHP/FI 2 in November 1997.
+
+The fact that PHP was not originally designed, but instead was developed organically has led to inconsistent naming of functions and inconsistent ordering of their parameters.[23] In some cases, the function names were chosen to match the lower-level libraries which PHP was "wrapping",[24] while in some very early versions of PHP the length of the function names was used internally as a hash function, so names were chosen to improve the distribution of hash values.[25]
+
+PHP 3 and 4
+
+This is an example of custom PHP code for the WordPress content management system.
+Zeev Suraski and Andi Gutmans rewrote the parser in 1997 and formed the base of PHP 3, changing the language's name to the recursive acronym PHP: Hypertext Preprocessor.[7][26] Afterwards, public testing of PHP 3 began, and the official launch came in June 1998. Suraski and Gutmans then started a new rewrite of PHP's core, producing the Zend Engine in 1999.[27] They also founded Zend Technologies in Ramat Gan, Israel.[7]
+
+On May 22, 2000, PHP 4, powered by the Zend Engine 1.0, was released.[7] As of August 2008 this branch reached version 4.4.9. PHP 4 is no longer under development nor will any security updates be released.[28][29]
+
+PHP 5
+On July 14, 2004, PHP 5 was released, powered by the new Zend Engine II.[7] PHP 5 included new features such as improved support for object-oriented programming, the PHP Data Objects (PDO) extension (which defines a lightweight and consistent interface for accessing databases), and numerous performance enhancements.[30] In 2008, PHP 5 became the only stable version under development. Late static binding had been missing from PHP and was added in version 5.3.[31][32]
+
+Many high-profile open-source projects ceased to support PHP 4 in new code as of February 5, 2008, because of the GoPHP5 initiative,[33] provided by a consortium of PHP developers promoting the transition from PHP 4 to PHP 5.[34][35]
+
+Over time, PHP interpreters became available on most existing 32-bit and 64-bit operating systems, either by building them from the PHP source code, or by using pre-built binaries.[36] For PHP versions 5.3 and 5.4, the only available Microsoft Windows binary distributions were 32-bit IA-32 builds,[37][38] requiring Windows 32-bit compatibility mode while using Internet Information Services (IIS) on a 64-bit Windows platform. PHP version 5.5 made the 64-bit x86-64 builds available for Microsoft Windows.[39]
+
+Official security support for PHP 5.6 ended on 31 December 2018,[40] but Debian 8.0 Jessie will extend support until June 2020.[16]
+
+PHP 6 and Unicode
+PHP received mixed reviews due to lacking native Unicode support at the core language level.[41][42] In 2005, a project headed by Andrei Zmievski was initiated to bring native Unicode support throughout PHP, by embedding the International Components for Unicode (ICU) library, and representing text strings as UTF-16 internally.[43] Since this would cause major changes both to the internals of the language and to user code, it was planned to release this as version 6.0 of the language, along with other major features then in development.[44]
+
+However, a shortage of developers who understood the necessary changes, and performance problems arising from conversion to and from UTF-16, which is rarely used in a web context, led to delays in the project.[45] As a result, a PHP 5.3 release was created in 2009, with many non-Unicode features back-ported from PHP 6, notably namespaces. In March 2010, the project in its current form was officially abandoned, and a PHP 5.4 release was prepared containing most remaining non-Unicode features from PHP 6, such as traits and closure re-binding.[46] Initial hopes were that a new plan would be formed for Unicode integration, but as of 2014 none had been adopted.
+
+PHP 7
+During 2014 and 2015, a new major PHP version was developed, which was numbered PHP 7. The numbering of this version involved some debate.[47] While the PHP 6 Unicode experiment had never been released, several articles and book titles referenced the PHP 6 name, which might have caused confusion if a new release were to reuse the name.[48] After a vote, the name PHP 7 was chosen.[49]
+
+The foundation of PHP 7 is a PHP branch that was originally dubbed PHP next generation (phpng). It was authored by Dmitry Stogov, Xinchen Hui and Nikita Popov,[50] and aimed to optimize PHP performance by refactoring the Zend Engine while retaining near-complete language compatibility.[51] As of 14 July 2014, WordPress-based benchmarks, which served as the main benchmark suite for the phpng project, showed an almost 100% increase in performance. Changes from phpng are also expected to make it easier to improve performance in the future, as more compact data structures and other changes are seen as better suited for a successful migration to a just-in-time (JIT) compiler.[52] Because of the significant changes, the reworked Zend Engine is called Zend Engine 3, succeeding Zend Engine 2 used in PHP 5.[53]
+
+Because of major internal changes in phpng it must receive a new major version number of PHP, rather than a minor PHP 5 release, according to PHP's release process.[54] Major versions of PHP are allowed to break backward-compatibility of code and therefore PHP 7 presented an opportunity for other improvements beyond phpng that require backward-compatibility breaks. In particular, it involved the following changes:
+
+Many fatal- or recoverable-level legacy PHP error mechanisms were replaced with modern object-oriented exceptions[55]
+The syntax for variable dereferencing was reworked to be internally more consistent and complete, allowing the use of the operators ->, [], (),{}, and ::, with arbitrary meaningful left-side expressions[56]
+Support for legacy PHP 4-style constructor methods was deprecated[57]
+The behavior of the foreach statement was changed to be more predictable[58]
+Constructors for the few classes built-in to PHP which returned null upon failure were changed to throw an exception instead, for consistency[59]
+Several unmaintained or deprecated server application programming interfaces (SAPIs) and extensions were removed from the PHP core, most notably the legacy mysql extension[60]
+The behavior of the list() operator was changed to remove support for strings[61]
+Support was removed for legacy ASP-style delimiters <% and %> and <script language="php"> ... </script>[62]
+An oversight allowing a switch statement to have multiple default clauses was fixed[63]
+Support for hexadecimal number support in some implicit conversions from strings to number types was removed[64]
+The left-shift and right-shift operators were changed to behave more consistently across platforms[65]
+Conversions between integers and floating point numbers were tightened and implemented more consistently across platforms[65][66]
+PHP 7 also included new language features. Most notably, it introduces return type declarations for functions[67] which complement the existing parameter type declarations, and support for the scalar types (integer, float, string, and boolean) in parameter and return type declarations.[68]
+
+Release history
+Version	Release date	Supported until[15]	Notes
+1.0	8 June 1995		Officially called "Personal Home Page Tools (PHP Tools)". This is the first use of the name "PHP".[7]
+2.0	1 November 1997		Officially called "PHP/FI 2.0". This is the first release that could actually be characterised as PHP, being a standalone language with many features that have endured to the present day.
+3.0	6 June 1998	20 October 2000[15]	Development moves from one person to multiple developers. Zeev Suraski and Andi Gutmans rewrite the base for this version.[7]
+4.0	22 May 2000	23 June 2001[15]	Added more advanced two-stage parse/execute tag-parsing system called the Zend engine.[69]
+4.1	10 December 2001	12 March 2002[15]	Introduced "superglobals" ($_GET, $_POST, $_SESSION, etc.)[69]
+4.2	22 April 2002	6 September 2002[15]	Disabled register_globals by default. Data received over the network is not inserted directly into the global namespace anymore, closing possible security holes in applications.[69]
+4.3	27 December 2002	31 March 2005[15]	Introduced the command-line interface (CLI), to supplement the CGI.[69][70]
+4.4	11 July 2005	7 August 2008[15]	Fixed a memory corruption bug, which required breaking binary compatibility with extensions compiled against PHP version 4.3.x.[71]
+5.0	13 July 2004	5 September 2005[15]	Zend Engine II with a new object model.[72]
+5.1	24 November 2005	24 August 2006[15]	Performance improvements with introduction of compiler variables in re-engineered PHP Engine.[72] Added PHP Data Objects (PDO) as a consistent interface for accessing databases.[73]
+5.2	2 November 2006	6 January 2011[15]	Enabled the filter extension by default. Native JSON support.[72]
+5.3	30 June 2009	14 August 2014[15]	Namespace support; late static bindings, jump label (limited goto), closures, PHP archives (phar), garbage collection for circular references, improved Windows support, sqlite3, mysqlnd as a replacement for libmysql as underlying library for the extensions that work with MySQL, fileinfo as a replacement for mime_magic for better MIME support, the Internationalization extension, and deprecation of ereg extension.
+5.4	1 March 2012	3 September 2015[15]	Trait support, short array syntax support. Removed items: register_globals, safe_mode, allow_call_time_pass_reference, session_register(), session_unregister() and session_is_registered(). Built-in web server.[74] Several improvements to existing features, performance and reduced memory requirements.
+5.5	20 June 2013	10 July 2016[75]	Support for generators, finally blocks for exceptions handling, OpCache (based on Zend Optimizer+) bundled in official distribution.[76]
+5.6	28 August 2014	31 December 2018[75]	Constant scalar expressions, variadic functions, argument unpacking, new exponentiation operator, extensions of the use statement for functions and constants, new phpdbg debugger as a SAPI module, and other smaller improvements.[77]
+6.x	Not released	N/A	Abandoned version of PHP that planned to include native Unicode support.[78][79]
+7.0	3 December 2015[80]	3 December 2018[54]	Zend Engine 3 (performance improvements[52] and 64-bit integer support on Windows[81]), uniform variable syntax,[56] AST-based compilation process,[82] added Closure::call(),[83] bitwise shift consistency across platforms,[84] ?? (null coalesce) operator,[85] Unicode code point escape syntax,[86] return type declarations,[67] scalar type (integer, float, string and boolean) declarations,[68] <=> "spaceship" three-way comparison operator,[87] generator delegation,[88] anonymous classes,[89] simpler and more consistently available CSPRNG API,[90] replacement of many remaining internal PHP "errors" with the more modern exceptions,[55] and shorthand syntax for importing multiple items from a namespace.[91]
+7.1	1 December 2016	1 December 2019[75]	void return type,[92] class constant visibility modifiers[93]
+7.2	30 November 2017	30 November 2020[75]	Object parameter and return type hint,[94] Libsodium extension,[95] Abstract method overriding,[96] Parameter type widening[97]
+7.3	6 December 2018[98]	6 December 2021	Flexible Heredoc and Nowdoc syntax,[99] support for reference assignment and array deconstruction with list(),[100] PCRE2 support,[101] hrtime() function[102]
+7.4	28 November 2019[103]	28 November 2022	Typed Properties 2.0,[104] Preloading,[105] Null Coalescing Assignment Operator,[106] Improve openssl_random_pseudo_bytes,[107] Weak References,[108] FFI – Foreign Function Interface[109]
+Always available hash extension,[110] Password Hash Registry,[111] Split multibyte string,[112] Reflection for references,[113] Unbundle ext/wddx,[114] New custom object serialization mechanism[115]
+
+8.0	December 2020[116]	December 2023	Just In Time compilation (JIT),[117] arrays starting with a negative index,[118] consistent type errors for internal functions,[119] fatal error for incompatible method signatures[120]
+Legend:Old versionOlder version, still maintainedLatest versionLatest preview versionFuture release
+Beginning on June 28, 2011, the PHP Development Team implemented a timeline for the release of new versions of PHP.[54] Under this system, at least one release should occur every month. Once per year, a minor release should occur which may include new features. Every minor release should at least be supported for two years with security and bug fixes, followed by at least one year of only security fixes, for a total of a three-year release process for every minor release. No new features, unless small and self-contained, are to be introduced into a minor release during the three-year release process. Latest versions of PHP are PHP 7.2.29, PHP 7.3.16 and PHP 7.4.4 released on 19 Mar 2020.
+
+Mascot
+
+The elePHPant, PHP mascot
+The mascot of the PHP project is the elePHPant, a blue elephant with the PHP logo on its side, designed by Vincent Pontier[121] in 1998.[122] "The (PHP) letters were forming the shape of an elephant if viewed in a sideways angle."[123] The elePHPant is sometimes differently colored when in plush toy form.
+
+Many variations of this mascot have been made over the years. Only the elePHPants based on the original design by Vincent Pontier are considered official by the community.[124] These are collectible and some of them are extremely rare[citation needed]. Different variations are listed on A Field Guide to Elephpants.
+
+Syntax
+Main article: PHP syntax and semantics
+The following "Hello, World!" program is written in PHP code embedded in an HTML document:
+
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>PHP "Hello, World!" program</title>
+ </head>
+ <body>
+  <?php echo '<p>Hello, World!</p>'; ?>
+ </body>
+</html>
+However, as no requirement exists for PHP code to be embedded in HTML, the simplest version of Hello, World! may be written like this, with the closing tag omitted as preferred in files containing pure PHP code[125]
+
+ <?='Hello, World!';
+As well, there is no requirement that a PHP file contain PHP code at all – the interpreter will output data outside of PHP tags unchanged so a simple text file containing "Hello, World!" will give the same output.
+
+The PHP interpreter only executes PHP code within its delimiters. Anything outside its delimiters is not processed by PHP, although non-PHP text is still subject to control structures described in PHP code. The most common delimiters are <?php to open and ?> to close PHP sections. The shortened form <? also exists. This short delimiter makes script files less portable, since support for them can be disabled in the local PHP configuration and it is therefore discouraged;[126][127] there is no recommendation against the echo short tag <?=.[128] Prior to PHP 5.4.0, this short syntax for echo() only works with the short_open_tag configuration setting enabled, while for PHP 5.4.0 and later it is always available.[129][130][126] The purpose of all these delimiters is to separate PHP code from non-PHP content, such as JavaScript code or HTML markup.[131]
+
+The first form of delimiters, <?php and ?>, in XHTML and other XML documents, creates correctly formed XML processing instructions.[132] This means that the resulting mixture of PHP code and other markup in the server-side file is itself well-formed XML.
+
+Variables are prefixed with a dollar symbol, and a type does not need to be specified in advance. PHP 5 introduced type hinting that allows functions to force their parameters to be objects of a specific class, arrays, interfaces or callback functions. However, before PHP 7.0, type hints could not be used with scalar types such as integer or string.[68]
+
+Unlike function and class names, variable names are case sensitive. Both double-quoted ("") and heredoc strings provide the ability to interpolate a variable's value into the string.[133] PHP treats newlines as whitespace in the manner of a free-form language, and statements are terminated by a semicolon.[134] PHP has three types of comment syntax: /* */ marks block and inline comments; // or # are used for one-line comments.[135] The echo statement is one of several facilities PHP provides to output text.
+
+In terms of keywords and language syntax, PHP is similar to the C style syntax. if conditions, for and while loops, and function returns are similar in syntax to languages such as C, C++, C#, Java and Perl.
+
+Data types
+PHP stores integers in a platform-dependent range, either as a 32, 64 or 128-bit signed integer equivalent to the C-language long type. Unsigned integers are converted to signed values in certain situations, which is different behavior to many other programming languages.[136] Integer variables can be assigned using decimal (positive and negative), octal, hexadecimal, and binary notations.
+
+Floating point numbers are also stored in a platform-specific range. They can be specified using floating point notation, or two forms of scientific notation.[137] PHP has a native Boolean type that is similar to the native Boolean types in Java and C++. Using the Boolean type conversion rules, non-zero values are interpreted as true and zero as false, as in Perl and C++.[137]
+
+The null data type represents a variable that has no value; NULL is the only allowed value for this data type.[137]
+
+Variables of the "resource" type represent references to resources from external sources. These are typically created by functions from a particular extension, and can only be processed by functions from the same extension; examples include file, image, and database resources.[137]
+
+Arrays can contain elements of any type that PHP can handle, including resources, objects, and even other arrays. Order is preserved in lists of values and in hashes with both keys and values, and the two can be intermingled.[137] PHP also supports strings, which can be used with single quotes, double quotes, nowdoc or heredoc syntax.[138]
+
+The Standard PHP Library (SPL) attempts to solve standard problems and implements efficient data access interfaces and classes.[139]
+
+Functions
+PHP defines a large array of functions in the core language and many are also available in various extensions; these functions are well documented in the online PHP documentation.[140] However, the built-in library has a wide variety of naming conventions and associated inconsistencies, as described under history above.
+
+Custom functions may be defined by the developer:
+
+function myAge(int $birthYear): string
+{
+    // calculate the age by subtracting the birth year from the current year.
+    $yearsOld = date('Y') - $birthYear;
+
+    // return the age in a descriptive string.
+    return $yearsOld . ' year' . ($yearsOld != 1 ? 's':'');
+}
+
+echo 'I am currently ' . myAge(1995) . ' old.';
+In 2020, the output of the above sample program is 'I am currently 25 years old.'
+
+In lieu of function pointers, functions in PHP can be referenced by a string containing their name. In this manner, normal PHP functions can be used, for example, as callbacks or within function tables.[141] User-defined functions may be created at any time without being prototyped.[140][141] Functions may be defined inside code blocks, permitting a run-time decision as to whether or not a function should be defined. There is a function_exists function that determines whether a function with a given name has already been defined. Function calls must use parentheses, with the exception of zero-argument class constructor functions called with the PHP operator new, in which case parentheses are optional.
+
+Until PHP 5.3, support for anonymous functions and closures did not exist in PHP. While create_function() has existed since PHP 4.0.1, it is merely a thin wrapper around eval() that allows normal PHP functions to be created during program execution.[142] PHP 5.3 added syntax to define an anonymous function or "closure"[143] which can capture variables from the surrounding scope:
+
+function getAdder($x)
+{
+    return function($y) use ($x) {
+        return $x + $y;
+    };
+}
+
+$adder = getAdder(8);
+echo $adder(2); // prints "10"
+In the example above, getAdder() function creates a closure using passed argument $x (the keyword use imports a variable from the lexical context), which takes an additional argument $y, and returns the created closure to the caller. Such a function is a first-class object, meaning that it can be stored in a variable, passed as a parameter to other functions, etc.[144]
+
+Unusually for a dynamically typed language, PHP supports type declarations on function parameters, which are enforced at runtime. This has been supported for classes and interfaces since PHP 5.0, for arrays since PHP 5.1, for "callables" since PHP 5.4, and scalar (integer, float, string and boolean) types since PHP 7.0.[68] PHP 7.0 also has type declarations for function return types, expressed by placing the type name after the list of parameters, preceded by a colon.[67] For example, the getAdder function from the earlier example could be annotated with types like so in PHP 7:
+
+function getAdder(int $x): Closure
+{
+    return function(int $y) use ($x): int
+    {
+        return $x + $y;
+    };
+}
+
+$adder = getAdder(8);
+echo $adder(2); // prints "10"
+echo $adder(null); // throws an exception because an incorrect type was passed
+$adder = getAdder([]); // would also throw an exception
+By default, scalar type declarations follow weak typing principles. So, for example, if a parameter's type is int, PHP would allow not only integers, but also convertible numeric strings, floats or booleans to be passed to that function, and would convert them.[68] However, PHP 7 has a "strict typing" mode which, when used, disallows such conversions for function calls and returns within a file.[68]
+
+PHP Objects
+Basic object-oriented programming functionality was added in PHP 3 and improved in PHP 4.[7] This allowed for PHP to gain further abstraction, making creative tasks easier for programmers using the language. Object handling was completely rewritten for PHP 5, expanding the feature set and enhancing performance.[145] In previous versions of PHP, objects were handled like value types.[145] The drawback of this method was that code had to make heavy use of PHP's "reference" variables if it wanted to modify an object it was passed rather than creating a copy of it. In the new approach, objects are referenced by handle, and not by value.
+
+PHP 5 introduced private and protected member variables and methods, along with abstract classes, final classes, abstract methods, and final methods. It also introduced a standard way of declaring constructors and destructors, similar to that of other object-oriented languages such as C++, and a standard exception handling model. Furthermore, PHP 5 added interfaces and allowed for multiple interfaces to be implemented. There are special interfaces that allow objects to interact with the runtime system. Objects implementing ArrayAccess can be used with array syntax and objects implementing Iterator or IteratorAggregate can be used with the foreach language construct. There is no virtual table feature in the engine, so static variables are bound with a name instead of a reference at compile time.[146]
+
+If the developer creates a copy of an object using the reserved word clone, the Zend engine will check whether a __clone() method has been defined. If not, it will call a default __clone() which will copy the object's properties. If a __clone() method is defined, then it will be responsible for setting the necessary properties in the created object. For convenience, the engine will supply a function that imports the properties of the source object, so the programmer can start with a by-value replica of the source object and only override properties that need to be changed.[147]
+
+The following is a basic example of object-oriented programming in PHP:
+
+<?php
+
+abstract class User
+{
+    public string $name;
+
+    public function __construct(string $name)
+    {
+        $this->name = $name;
+    }
+
+    public function greet(): string
+    {
+        return "Hello, my name is " . $this->name;
+    }
+
+    abstract public function job(): string;
+}
+
+class Student extends User
+{
+    public string $course;
+
+    public function __construct(string $name, string $course)
+    {
+        $this->course = $course;
+        parent::__construct($name);
+    }
+
+    public function job(): string
+    {
+        return "I learn " . $this->course;
+    }
+}
+
+class Teacher extends User
+{
+    public array $teachingCourses;
+
+    public function __construct(string $name, string...$teachingCourses)
+    {
+        $this->teachingCourses = $teachingCourses;
+        parent::__construct($name);
+    }
+
+    public function job(): string
+    {
+        return "I teach " . implode(", ", $this->teachingCourses);
+    }
+}
+
+$students = [
+    new Student("Alice", "Computer Science"),
+    new Student("Bob", "Computer Science"),
+    new Student("Charlie", "Business Studies"),
+];
+$teachers = [
+    new Teacher("Dan", "Computer Science", "Information Security"),
+    new Teacher("Erin", "Computer Science", "3D Graphics Programming"),
+    new Teacher("Frankie", "Online Marketing", "Business Studies", "E-commerce"),
+];
+
+echo "Students: \n";
+foreach ($students as $student) {
+    echo $student->greet() . ", " . $student->job() . "\n";
+}
+
+echo "Teachers: \n";
+foreach ($teachers as $teacher) {
+    echo $teacher->greet() . ", " . $teacher->job() . "\n";
+}
+
+// Output of program:
+// Students:
+// Hello, my name is Alice, I learn Computer Science
+// Hello, my name is Bob, I learn Computer Science
+// Hello, my name is Charlie, I learn Business Studies
+// Teachers:
+// Hello, my name is Dan, I teach Computer Science, Information Security
+// Hello, my name is Erin, I teach Computer Science, 3D Graphics Programming
+// Hello, my name is Frankie, I teach Online Marketing, Business Studies, E-commerce
+The visibility of PHP properties and methods is defined using the keywords public, private, and protected. The default is public, if only var is used; var is a synonym for public. Items declared public can be accessed everywhere. protected limits access to inherited classes (and to the class that defines the item). private limits visibility only to the class that defines the item.[148] Objects of the same type have access to each other's private and protected members even though they are not the same instance.
+
+Implementations
+The only complete PHP implementation is the original, known simply as PHP. It is the most widely used and is powered by the Zend Engine. To disambiguate it from other implementations, it is sometimes unofficially called "Zend PHP". The Zend Engine compiles PHP source code on-the-fly into an internal format that it can execute, thus it works as an interpreter.[149][150] It is also the "reference implementation" of PHP, as PHP has no formal specification, and so the semantics of Zend PHP define the semantics of PHP. Due to the complex and nuanced semantics of PHP, defined by how Zend works, it is difficult for competing implementations to offer complete compatibility.
+
+PHP's single-request-per-script-execution model, and the fact the Zend Engine is an interpreter, leads to inefficiency; as a result, various products have been developed to help improve PHP performance. In order to speed up execution time and not have to compile the PHP source code every time the web page is accessed, PHP scripts can also be deployed in the PHP engine's internal format by using an opcode cache, which works by caching the compiled form of a PHP script (opcodes) in shared memory to avoid the overhead of parsing and compiling the code every time the script runs. An opcode cache, Zend Opcache, is built into PHP since version 5.5.[151] Another example of a widely used opcode cache is the Alternative PHP Cache (APC), which is available as a PECL extension.[152]
+
+While Zend PHP is still the most popular implementation, several other implementations have been developed. Some of these are compilers or support JIT compilation, and hence offer performance benefits over Zend PHP at the expense of lacking full PHP compatibility. Alternative implementations include the following:
+
+HHVM (HipHop Virtual Machine) – developed at Facebook and available as open source, it converts PHP code into a high-level bytecode (commonly known as an intermediate language), which is then translated into x86-64 machine code dynamically at runtime by a just-in-time (JIT) compiler, resulting in up to 6× performance improvements.[153] However, since version 7.2 Zend has outperformed HHVM,[154] and HHVM 3.24 is the last version to officially support PHP.[155]
+Parrot – a virtual machine designed to run dynamic languages efficiently; Pipp transforms the PHP source code into the Parrot intermediate representation, which is then translated into the Parrot's bytecode and executed by the virtual machine.
+PeachPie – a second-generation compiler to .NET Common Intermediate Language (CIL) bytecode, built on the Roslyn platform; successor of Phalanger, sharing several architectural components
+Phalanger – compiles PHP into Common Intermediate Language (CIL) bytecode; predecessor of PeachPie
+Quercus – compiles PHP into Java bytecode
+HipHop – developed at Facebook and available as open source, it transforms the PHP scripts into C++ code and then compiles the resulting code, reducing the server load up to 50%. In early 2013, Facebook deprecated it in favor of HHVM due to multiple reasons, including deployment difficulties and lack of support for the whole PHP language, including the create_function() and eval() constructs.[156]
+Licensing
+PHP is free software released under the PHP License, which stipulates that:[157]
+
+Products derived from this software may not be called "PHP", nor may "PHP" appear in their name, without prior written permission from group@php.net. You may indicate that your software works in conjunction with PHP by saying "Foo for PHP" instead of calling it "PHP Foo" or "phpfoo".
+
+This restriction on use of "PHP" makes the PHP License incompatible with the General Public License (GPL), while the Zend License is incompatible due to an advertising clause similar to that of the original BSD license.[158]
+
+Development and community
+PHP includes various free and open-source libraries in its source distribution, or uses them in resulting PHP binary builds. PHP is fundamentally an Internet-aware system with built-in modules for accessing File Transfer Protocol (FTP) servers and many database servers, including PostgreSQL, MySQL, Microsoft SQL Server and SQLite (which is an embedded database), LDAP servers, and others. Numerous functions familiar to C programmers, such as those in the stdio family, are available in standard PHP builds.[159]
+
+PHP allows developers to write extensions in C to add functionality to the PHP language. PHP extensions can be compiled statically into PHP or loaded dynamically at runtime. Numerous extensions have been written to add support for the Windows API, process management on Unix-like operating systems, multibyte strings (Unicode), cURL, and several popular compression formats. Other PHP features made available through extensions include integration with IRC, dynamic generation of images and Adobe Flash content, PHP Data Objects (PDO) as an abstraction layer used for accessing databases,[160][161][162][163][164][165][166] and even speech synthesis. Some of the language's core functions, such as those dealing with strings and arrays, are also implemented as extensions.[167] The PHP Extension Community Library (PECL) project is a repository for extensions to the PHP language.[168]
+
+Some other projects, such as Zephir, provide the ability for PHP extensions to be created in a high-level language and compiled into native PHP extensions. Such an approach, instead of writing PHP extensions directly in C, simplifies the development of extensions and reduces the time required for programming and testing.[169]
+
+As of December 2018, the PHP Group consisted of ten people: Thies C. Arntzen, Stig Bakken, Shane Caraveo, Andi Gutmans, Rasmus Lerdorf, Sam Ruby, Sascha Schumann, Zeev Suraski, Jim Winstead, and Andrei Zmievski.[170]
+
+Zend Technologies provides a PHP Certification based on PHP 5.5[171] exam for programmers to become certified PHP developers.
+
+Installation and configuration
+There are two primary ways for adding support for PHP to a web server – as a native web server module, or as a CGI executable. PHP has a direct module interface called Server Application Programming Interface (SAPI), which is supported by many web servers including Apache HTTP Server, Microsoft IIS, Netscape (now defunct) and iPlanet. Some other web servers, such as OmniHTTPd, support the Internet Server Application Programming Interface (ISAPI), which is a Microsoft's web server module interface. If PHP has no module support for a web server, it can always be used as a Common Gateway Interface (CGI) or FastCGI processor; in that case, the web server is configured to use PHP's CGI executable to process all requests to PHP files.[172]
+
+PHP-FPM (FastCGI Process Manager) is an alternative FastCGI implementation for PHP, bundled with the official PHP distribution since version 5.3.3.[173] When compared to the older FastCGI implementation, it contains some additional features, mostly useful for heavily loaded web servers.[174]
+
+When using PHP for command-line scripting, a PHP command-line interface (CLI) executable is needed. PHP supports a CLI server application programming interface (SAPI) as of PHP 4.3.0.[175] The main focus of this SAPI is developing shell applications using PHP. There are quite a few differences between the CLI SAPI and other SAPIs, although they do share many of the same behaviors.[176]
+
+PHP has a direct module interface called SAPI for different web servers;[177] in case of PHP 5 and Apache 2.0 on Windows, it is provided in form of a DLL file called php5apache2.dll,[178] which is a module that, among other functions, provides an interface between PHP and the web server, implemented in a form that the server understands. This form is what is known as a SAPI.
+
+There are different kinds of SAPIs for various web server extensions. For example, in addition to those listed above, other SAPIs for the PHP language include the Common Gateway Interface (CGI) and command-line interface (CLI).[177][179]
+
+PHP can also be used for writing desktop graphical user interface (GUI) applications, by using the PHP-GTK extension. PHP-GTK is not included in the official PHP distribution,[172] and as an extension it can be used only with PHP versions 5.1.0 and newer. The most common way of installing PHP-GTK is compiling it from the source code.[180]
+
+When PHP is installed and used in cloud environments, software development kits (SDKs) are provided for using cloud-specific features. For example:
+
+Amazon Web Services provides the AWS SDK for PHP[181]
+Windows Azure can be used with the Windows Azure SDK for PHP.[182]
+Numerous configuration options are supported, affecting both core PHP features and extensions.[183][184] Configuration file php.ini is searched for in different locations, depending on the way PHP is used.[185] The configuration file is split into various sections,[186] while some of the configuration options can be also set within the web server configuration.[187]
+
+Use
+
+A broad overview of the LAMP software bundle, displayed here together with Squid
+PHP is a general-purpose scripting language that is especially suited to server-side web development, in which case PHP generally runs on a web server. Any PHP code in a requested file is executed by the PHP runtime, usually to create dynamic web page content or dynamic images used on websites or elsewhere.[188] It can also be used for command-line scripting and client-side graphical user interface (GUI) applications. PHP can be deployed on most web servers, many operating systems and platforms, and can be used with many relational database management systems (RDBMS). Most web hosting providers support PHP for use by their clients. It is available free of charge, and the PHP Group provides the complete source code for users to build, customize and extend for their own use.[11]
+
+
+Dynamic web page: example of server-side scripting (PHP and MySQL)
+PHP acts primarily as a filter,[citation needed] taking input from a file or stream containing text and/or PHP instructions and outputting another stream of data. Most commonly the output will be HTML, although it could be JSON, XML or binary data such as image or audio formats. Since PHP 4, the PHP parser compiles input to produce bytecode for processing by the Zend Engine, giving improved performance over its interpreter predecessor.[189]
+
+Originally designed to create dynamic web pages, PHP now focuses mainly on server-side scripting,[190] and it is similar to other server-side scripting languages that provide dynamic content from a web server to a client, such as Microsoft's ASP.NET, Sun Microsystems' JavaServer Pages,[191] and mod_perl. PHP has also attracted the development of many software frameworks that provide building blocks and a design structure to promote rapid application development (RAD). Some of these include PRADO, CakePHP, Symfony, CodeIgniter, Laravel, Yii Framework, Phalcon and Zend Framework, offering features similar to other web frameworks.
+
+The LAMP architecture has become popular in the web industry as a way of deploying web applications.[192] PHP is commonly used as the P in this bundle alongside Linux, Apache and MySQL, although the P may also refer to Python, Perl, or some mix of the three. Similar packages, WAMP and MAMP, are also available for Windows and macOS, with the first letter standing for the respective operating system. Although both PHP and Apache are provided as part of the macOS base install, users of these packages seek a simpler installation mechanism that can be more easily kept up to date.
+
+As of April 2007, over 20 million Internet domains had web services hosted on servers with PHP installed and mod_php was recorded as the most popular Apache HTTP Server module.[193] As of August 2019, PHP was used as the server-side programming language on 78.8% of websites, down from 83.5% previously, where the language could be determined.[194] Web content management systems written in PHP include MediaWiki,[195] Joomla,[196] eZ Publish, eZ Platform, SilverStripe,[197] WordPress,[198] Drupal,[199] and Moodle.[200] Websites written in PHP, in back-end and/or user-facing portion, include Facebook,[201] Digg,[202] Tumblr,[203] Dailymotion,[204] and Slack.[205]
+
+For specific and more advanced usage scenarios, PHP offers a well defined and documented way for writing custom extensions in C or C++.[206][207][208][209][210][211][212] Besides extending the language itself in form of additional libraries, extensions are providing a way for improving execution speed where it is critical and there is room for improvements by using a true compiled language.[213][214] PHP also offers well defined ways for embedding itself into other software projects. That way PHP can be easily used as an internal scripting language for another project, also providing tight interfacing with the project's specific internal data structures.[215]
+
+PHP received mixed reviews due to lacking support for multithreading at the core language level,[216] though using threads is made possible by the "pthreads" PECL extension.[217][218]
+
+As of January 2013, PHP was used in more than 240 million websites (39% of those sampled) and was installed on 2.1 million web servers.[219]
+
+A command line interface, php-cli, and two ActiveX Windows Script Host scripting engines for PHP have been produced.
+
+As of 2020, PHP 5 is most used on the web;[14] which was last updated with security updates in January 2019, with PHP 5.6.40.
+
+Security
+In 2019, 11% of all vulnerabilities listed by the National Vulnerability Database were linked to PHP;[220] historically, about 30% of all vulnerabilities listed since 1996 in this database are linked to PHP. Technical security flaws of the language itself or of its core libraries are not frequent (22 in 2009, about 1% of the total although PHP applies to about 20% of programs listed).[221] Recognizing that programmers make mistakes, some languages include taint checking to automatically detect the lack of input validation which induces many issues. Such a feature is being developed for PHP,[222] but its inclusion into a release has been rejected several times in the past.[223][224]
+
+There are advanced protection patches such as Suhosin and Hardening-Patch, especially designed for web hosting environments.[225]
+
+Historically, old versions of PHP had some configuration parameters and default values for such runtime settings that made some PHP applications prone to security issues. Among these, magic_quotes_gpc and register_globals[226] configuration directives were the best known; the latter made any URL parameters become PHP variables, opening a path for serious security vulnerabilities by allowing an attacker to set the value of any uninitialized global variable and interfere with the execution of a PHP script. Support for "magic quotes" and "register globals" settings has been deprecated as of PHP 5.3.0, and removed as of PHP 5.4.0.[227]
+
+Another example for the potential runtime-settings vulnerability comes from failing to disable PHP execution (for example by using the engine configuration directive)[228] for the directory where uploaded files are stored; enabling it can result in execution of malicious code embedded within the uploaded files.[229][230][231] The best practice is to either locate the image directory outside of the document root available to the web server and serve it via intermediary script, or disable PHP execution for the directory which stores the uploaded files.
+
+Also, enabling the dynamic loading of PHP extensions (via enable_dl configuration directive)[232] in a shared web hosting environment can lead to security issues.[233][234]
+
+Implied type conversions that result in different values being treated as equal, sometimes against the programmer's intent, can lead to security issues. For example, the result of the comparison '0e1234' == '0' is true, because strings that are parseable as numbers are converted to numbers; in this case, the first compared value is treated as scientific notation having the value (0×101234), which is zero. Errors like this resulted in authentication vulnerabilities in Simple Machines Forum,[235] Typo3[236] and phpBB[237] when MD5 password hashes were compared. The recommended way is to use hash_equals() (for timing attack safety), strcmp or the identity operator (===), as '0e1234' === '0' results in false.[238]
+
+In a 2013 analysis of over 170,000 website defacements, published by Zone-H, the most frequently (53%) used technique was exploitation of file inclusion vulnerability, mostly related to insecure usage of the PHP functions include, require, and allow_url_fopen.[239][240]
+
+See also
+icon	Computer programming portal
+	Free and open-source software portal
+Comparison of programming languages
+Comparison of web frameworks
+Hack (programming language)
+List of AMP packages
+List of PHP accelerators
+List of PHP editors
+PEAR (PHP Extension and Application Repository)
+PHP accelerator
+PHP Extension Community Library (PECL)
+PHP-GTK
+Template processor
+XAMPP (Free and open-source cross-platform web server solution stack package)
+Zend Server

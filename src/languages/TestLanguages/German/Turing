@@ -1,0 +1,152 @@
+
+Alan Turing
+Zur Navigation springenZur Suche springen
+
+Alan Turing (ca. 1938)[1]
+Seine Unterschrift
+Alan Mathison Turing OBE,[2] FRS[3] [ˈælən ˈmæθɪsən ˈtjʊəɹɪŋ] (* 23. Juni 1912 in London; † 7. Juni 1954 in Wilmslow, Cheshire) war ein britischer Logiker, Mathematiker, Kryptoanalytiker und Informatiker. Er gilt heute als einer der einflussreichsten Theoretiker der frühen Computerentwicklung und Informatik. Turing schuf einen großen Teil der theoretischen Grundlagen für die moderne Informations- und Computertechnologie. Als richtungsweisend erwiesen sich auch seine Beiträge zur theoretischen Biologie.
+
+Das von ihm entwickelte Berechenbarkeitsmodell der Turingmaschine bildet eines der Fundamente der Theoretischen Informatik. Während des Zweiten Weltkrieges war er maßgeblich an der Entzifferung der mit der „Enigma“ verschlüsselten deutschen Funksprüche beteiligt. Der Großteil seiner Arbeiten blieb auch nach Kriegsende unter Verschluss.
+
+Turing entwickelte 1953 eines der ersten Schachprogramme, dessen Berechnungen er mangels Hardware selbst vornahm. Nach ihm benannt sind der Turing Award, die bedeutendste Auszeichnung in der Informatik, sowie der Turing-Test zum Überprüfen des Vorhandenseins von künstlicher Intelligenz.[4]
+
+Im März 1952 wurde Turing wegen seiner Homosexualität, die damals noch als Straftat verfolgt wurde, zur chemischen Kastration verurteilt.[5][6] Turing erkrankte in Folge der Hormonbehandlung an einer Depression und starb etwa zwei Jahre später durch Suizid. Im Jahr 2009 sprach der damalige britische Premierminister Gordon Brown eine offizielle Entschuldigung im Namen der Regierung für die „entsetzliche Behandlung“ Turings aus und würdigte dessen „außerordentliche Verdienste“ während des Krieges; eine Begnadigung wurde aber noch 2011 trotz einer Petition abgelehnt. Am Weihnachtsabend, dem 24. Dezember 2013 sprach Königin Elisabeth II. postum ein „Royal Pardon“ (Königliche Begnadigung) aus.[7][8][9][10]
+
+
+Inhaltsverzeichnis
+1	Leben und Wirken
+1.1	Kindheit und Jugend
+1.2	Collegezeit und theoretische Arbeiten
+2	Karriere und Forschung
+2.1	Kryptoanalyse
+2.2	Arbeit an frühen Computern – Der Turing-Test
+2.3	Arbeit an mathematischen Problemen der Biologie
+2.4	Verfolgung wegen Homosexualität und Turings Tod
+3	Offizielle Entschuldigung, Danksagung und Rehabilitierung
+4	Nachwirkungen der Rehabilitierung
+5	Postume Ehrungen
+6	Verschiedenes
+7	Werke
+7.1	Veröffentlichungen
+7.2	Patente
+8	Literatur (Auswahl)
+8.1	Theorie und Diskussion
+8.2	Geschichte und Biographie
+8.3	Belletristik
+9	Filme (Auswahl)
+10	Musik
+11	Comic
+12	Weblinks
+13	Einzelnachweise
+Leben und Wirken
+Kindheit und Jugend
+
+Turing als 16-Jähriger
+Alan Turings Vater Julius Mathison Turing war britischer Beamter beim Indian Civil Service. Er und seine Frau Ethel Sara (geborene Stoney) wünschten, dass ihre Kinder in Großbritannien aufwüchsen.[11] Deshalb kehrte die Familie vor Alans Geburt aus Chatrapur, damals Britisch-Indien, nach London-Paddington zurück, wo Alan Turing am 23. Juni 1912 zur Welt kam. Da der Staatsdienst seines Vaters noch nicht beendet war, reiste dieser im Frühjahr 1913 erneut nach Indien, wohin ihm seine Frau im Herbst folgte. Turing und sein älterer Bruder John wurden nach St. Leonards-on-the-Sea, Hastings, in die Familie eines pensionierten Obersts und dessen Frau in Pflege gegeben. In der Folgezeit pendelten die Eltern zwischen England und Indien, bis sich Turings Mutter 1916 entschied, längere Zeit in England zu bleiben, und die Söhne wieder zu sich nahm.
+
+Schon in früher Kindheit zeigte sich die hohe Begabung und Intelligenz Turings. Es wird berichtet, dass er sich innerhalb von drei Wochen selbst das Lesen beibrachte und sich schon früh zu Zahlen und Rätseln hingezogen fühlte.[11]
+
+Im Alter von sechs Jahren wurde Turing auf die private Tagesschule St. Michael’s in St. Leonards-on-the-Sea geschickt, wo die Schulleiterin frühzeitig seine Begabung bemerkte. 1926, im Alter von 14 Jahren, wechselte er auf die Sherborne School in Dorset. Sein erster Schultag dort fiel auf einen Generalstreik in England. Turing war jedoch so motiviert, dass er die 100 Kilometer von Southampton zur Schule allein auf dem Fahrrad zurücklegte und dabei nur einmal in der Nacht an einer Gaststätte Halt machte; so berichtete jedenfalls die Lokalpresse.
+
+Turings Drang zur Naturwissenschaft traf bei seinen Lehrern in Sherborne auf wenig Gegenliebe; sie setzten eher auf Geistes- als auf Naturwissenschaften. Trotzdem zeigte Turing auch weiterhin bemerkenswerte Fähigkeiten in den von ihm geliebten Bereichen. So löste er für sein Alter fortgeschrittene Aufgabenstellungen, ohne zuvor irgendwelche Kenntnisse der elementaren Infinitesimalrechnung erworben zu haben.
+
+Im Jahr 1928 stieß Turing auf die Arbeiten Albert Einsteins. Er verstand sie nicht nur, sondern entnahm einem Text selbständig Einsteins Bewegungsgesetz, obwohl dieses nicht explizit erwähnt wurde.
+
+Collegezeit und theoretische Arbeiten
+Turings Widerstreben, für Geisteswissenschaften genauso hart wie für Naturwissenschaften zu arbeiten, hatte zur Folge, dass er einige Male durch die Prüfungen fiel. Weil dies seinen Notendurchschnitt verschlechterte, musste er 1931 auf ein College zweiter Wahl gehen, das King’s College, Cambridge, entgegen seinem Wunsch, am Trinity College zu studieren. Er studierte von 1931 bis 1934 unter Godfrey Harold Hardy (1877–1947), einem respektierten Mathematiker, der den Sadleirian Chair in Cambridge innehatte, das zu der Zeit ein Zentrum der mathematischen Forschung war.
+
+
+1-Band-Turingmaschine: abstraktes Modell eines Rechners, der mit nur drei Operationen (lesen, schreiben und Kopf bewegen) sämtliche berechenbare Probleme lösen kann
+In seiner für diesen Zweig der Mathematik grundlegenden Arbeit On Computable Numbers, with an Application to the „Entscheidungsproblem“ (28. Mai 1936) formulierte Turing die Ergebnisse Kurt Gödels von 1931 neu. Er ersetzte dabei Gödels universelle, arithmetisch-basierte formale Sprache durch einen einfachen gedanklichen Mechanismus, eine abstrakt-formale Zeichenketten verarbeitende mathematische Maschine, die heute unter dem Namen Turingmaschine bekannt ist. („Entscheidungsproblem“ verweist auf eines der 23 wichtigsten offenen Probleme der Mathematik des 20. Jahrhunderts, vorgestellt von David Hilbert 1900 auf dem 2. Internationalen Mathematiker-Kongress in Paris („Hilbertsche Probleme“).) Turing bewies, dass solch ein Gerät in der Lage ist, „jedes vorstellbare mathematische Problem zu lösen, sofern dieses auch durch einen Algorithmus gelöst werden kann“.
+
+Turingmaschinen sind bis zum heutigen Tag einer der Schwerpunkte der Theoretischen Informatik, nämlich der Berechenbarkeitstheorie. Mit Hilfe der Turingmaschine gelang Turing der Beweis, dass es keine Lösung für das Entscheidungsproblem gibt. Er zeigte, dass die Mathematik in gewissem Sinne unvollständig ist, weil es allgemein keine Möglichkeit gibt, festzustellen, ob eine beliebige, syntaktisch korrekt gebildete mathematische Aussage beweisbar oder widerlegbar ist. Dazu bewies er, dass das Halteproblem für Turingmaschinen nicht lösbar ist, d. h., dass es nicht möglich ist, algorithmisch zu entscheiden, ob eine Turingmaschine, angesetzt auf eine Eingabe (initiale Bandbelegung), jemals zum Stillstand kommen wird, das heißt die Berechnung terminiert. Turings Beweis wurde erst nach dem von Alonzo Church (1903–1995) mit Hilfe des Lambda-Kalküls geführten Beweis veröffentlicht; unabhängig davon ist Turings Arbeit beträchtlich einfacher und intuitiv zugänglich. Auch war der Begriff der „Universellen (Turing-) Maschine“ neu, einer Maschine, welche jede beliebige andere Turing-Maschine simulieren kann. Die Eingabe für diese Maschine ist also ein verschlüsseltes Programm, das von der universellen Maschine interpretiert wird, und der Startwert, auf den es angewendet werden soll.
+
+Alle bis heute definierten Berechenbarkeitsbegriffe haben sich (bis auf die Abbildung von Worten auf Zahlen und umgekehrt) als äquivalent erwiesen.
+
+1938 und 1939 verbrachte Turing zumeist an der Princeton University und studierte dort unter Alonzo Church. 1938 erwarb er den Doktortitel in Princeton. Seine Doktorarbeit führte den Begriff der „Hypercomputation“ ein, bei der Turingmaschinen zu sogenannten Orakel-Maschinen erweitert werden. So wurde das Studium von nicht-deterministisch lösbaren Problemen ermöglicht.
+
+Karriere und Forschung
+Nach seiner Rückkehr nach Cambridge im Jahr 1939 besuchte Turing Vorlesungen des österreichisch-britischen Philosophen Ludwig Wittgenstein (1889–1951) über die Grundlagen der Mathematik.[12] Die Vorlesungen wurden Wort für Wort aus den Notizen der Studenten rekonstruiert, einschließlich Zwischenrufe von Turing und anderen Studenten.[13] Die beiden diskutierten und stritten vehement: Turing verteidigte den mathematischen Formalismus, während Wittgenstein der Meinung war, dass Mathematik überbewertet sei und keine absolute Wahrheit zutage bringen könne.[14]
+
+Kryptoanalyse
+
+Nachbau einer Turing-Bombe
+Während des Zweiten Weltkriegs war Turing einer der herausragenden Wissenschaftler bei den erfolgreichen Versuchen in Bletchley Park, verschlüsselte deutsche Funksprüche zu entziffern. Er steuerte einige mathematische Modelle bei, um sowohl die Enigma (siehe auch: Letchworth-Enigma) als auch die Lorenz-Schlüsselmaschine (siehe auch: Turingery) zu brechen. Die Einblicke, die Turing bei der Kryptoanalyse der Fish-Verschlüsselungen gewann, halfen später bei der Entwicklung des ersten digitalen, programmierbaren elektronischen Röhrencomputers ENIAC. Konstruiert von Max Newman und seinem Team und gebaut in der Post Office Research Station in Dollis Hill von einem von Tommy Flowers angeführten Team im Jahr 1943, entzifferte Colossus die Lorenz-Maschine. Auch konzipierte Turing die nach ihm benannten Bombes. Sie waren Nachfolgerinnen der von dem Polen Marian Rejewski entwickelten Bomba und dienten zur Ermittlung der Schlüssel von Enigma-Nachrichten. Dabei handelte es sich um ein elektromechanisches Gerät, das im Prinzip mehrere Enigma-Maschinen beinhaltete und so in der Lage war, viele mögliche Schlüsseleinstellungen der Enigma-Nachrichten durchzutesten und zu eliminieren, bis eine mögliche Lösung gefunden war (Reductio ad absurdum; deutsch Zurückführung bis zum Widerspruch).
+
+Turings Mitwirkung als einer der wichtigsten Codeknacker bei der Entzifferung der Enigma war bis in die 1970er Jahre geheim; nicht einmal seine engsten Freunde wussten davon. Die Entzifferung geheimer deutscher Funksprüche war eine kriegsentscheidende Komponente für den Sieg der Alliierten im U-Boot-Krieg und im Afrikafeldzug.[15]
+
+Arbeit an frühen Computern – Der Turing-Test
+
+Lochkarten für die Automatic Computing Engine des National Physical Laboratory aus dem Jahr 1950
+Von 1945 bis 1948 war Turing im National Physical Laboratory in Teddington tätig, wo er am Design der ACE (Automatic Computing Engine) arbeitete. Der Name der Maschine ist abgeleitet von der Analytical Engine des Mathematikers Charles Babbage, dessen Werk Turing zeitlebens bewunderte.
+
+Ab 1948 lehrte Turing an der Universität Manchester und wurde im Jahr 1949 stellvertretender Direktor der Computerabteilung. Hier arbeitete er an der Software für einen der ersten echten Computer, den Manchester Mark I und gleichzeitig weiterhin verschiedenen theoretischen Arbeiten. In Computing machinery and intelligence (Mind, Oktober 1950) griff Turing die Problematik der künstlichen Intelligenz auf und schlug den Turing-Test als Kriterium vor, ob eine Maschine dem Menschen vergleichbar denkfähig ist. Da der Denkvorgang nicht formalisierbar ist, betrachtet der Test nur die Antworten einer Maschine im Dialog mit einem Menschen, d. h. das kommunikative Verhalten der Maschine. Wenn dieses von einem menschlichen Verhalten nicht unterscheidbar erscheint, soll von maschineller Intelligenz gesprochen werden. Er beeinflusste durch die Veröffentlichung die Entwicklung der Künstlichen Intelligenz maßgeblich.
+
+1952 schrieb er das Schachprogramm Turochamp. Da es keine Computer mit ausreichender Leistung gab, um es auszuführen, übernahm Turing dessen Funktion und berechnete jeden Zug selbst. Dies dauerte bis zu 30 Minuten pro Zug. Das einzige schriftlich dokumentierte Spiel verlor er gegen einen Kollegen.[16]
+
+Arbeit an mathematischen Problemen der Biologie
+Von 1952 bis zu seinem Tod 1954 arbeitete Turing an mathematischen Problemen der theoretischen Biologie. Er veröffentlichte 1952 eine Arbeit zum Thema The Chemical Basis of Morphogenesis. In diesem Artikel wurde erstmals ein Mechanismus beschrieben, wie Reaktions-Diffusions-Systeme spontan Strukturen entwickeln können. Dieser als Turing-Mechanismus bekannte Prozess steht noch heute im Mittelpunkt vieler chemisch-biologischer Strukturbildungstheorien. Turings weiteres Interesse galt dem Vorkommen der Fibonacci-Zahlen in der Struktur von Pflanzen. Spätere Arbeiten blieben bis zur Veröffentlichung seiner gesammelten Werke 1992 unveröffentlicht.
+
+Verfolgung wegen Homosexualität und Turings Tod
+
+Beim Berliner Christopher Street Day 2012, der am 100. Geburtstag Turings stattfand, warb die britische Botschaft mit Turing als Codeknacker. Sechzig Jahre zuvor hatte die staatliche Verfolgung begonnen.
+1952 half der 19-jährige Arnold Murray, zu dem Turing eine gleichgeschlechtliche Beziehung hatte, einem Komplizen dabei, in Turings Haus einzubrechen. Turing meldete daraufhin einen Diebstahl bei der Polizei, die ihm als Folge der Ermittlungen eine sexuelle Beziehung zu Murray vorwarf. Da homosexuelle Handlungen zu dieser Zeit in England – wie in den meisten anderen Ländern – strafbar waren, wurde Turing wegen „grober Unzucht und sexueller Perversion“ angeklagt. Turing sah keinen Anlass, sich wegen dieser Vorwürfe zu rechtfertigen.
+
+Nach seiner Verurteilung zu einer Gefängnisstrafe wurde er vor die Wahl gestellt, die Haftstrafe anzutreten oder – da zu seiner Zeit Homosexualität von weiten Teilen der Psychiatrie als Krankheit angesehen wurde – sich behandeln zu lassen. Er entschied sich für die ärztliche Behandlung, zu der auch eine medikamentöse Behandlung mit dem Hormon Östrogen gehörte. Diesem wurde eine triebhemmende Wirkung zugeschrieben. Die Behandlung dauerte ein Jahr und führte zu Nebenwirkungen wie der Vergrößerung der Brustdrüse. Auch wenn er seine körperlichen Veränderungen mit Humor kommentierte, muss die Verweiblichung seiner Konturen den sportlichen Läufer und Tennisspieler schwer getroffen haben. Turing erkrankte an einer Depression.[17] Im Herbst 1952 begann Turing seine Therapie bei dem aus Berlin stammenden und seit 1939 in Manchester lebenden Psychoanalytiker Franz Greenbaum. Dieser war ein Anhänger C.G. Jungs und war ihm von Freunden als für seinen Fall verständnisvoll empfohlen worden. Turing entwickelte auch ein freundschaftliches Verhältnis zur Familie Greenbaum, die er auch privat besuchte.[18]
+
+1954 starb Turing, wahrscheinlich entsprechend der offiziellen Feststellung durch Suizid, an einer Cyanidvergiftung, dem Anschein nach von einem vergifteten Apfel herrührend, den man halb aufgegessen neben ihm auffand. Die Ermittler versäumten es jedoch, den Apfel auf Gift untersuchen zu lassen. Es wird berichtet, dass Turing seit 1938, nachdem er den Film „Schneewittchen und die sieben Zwerge“ gesehen hatte, immer wieder die Verse Dip the apple in the brew / Let the sleeping death seep through („Tauch den Apfel tief hinein / bis das Gift wird in ihm sein“,[19] in der deutschen Version des Films: „Apfel färbt sich strahlend rot / lockt Schneewittchen in den Tod“) sang. Der These, dass Turings Tod ein Unfall im Zusammenhang mit einem chemischen Versuch war, wird von Andrew Hodges, einem seiner Biographen, entschieden widersprochen.[18] Unter seinen Biographen ist die Annahme verbreitet, die Auswirkungen der Hormonbehandlung seien die Hauptursache für den Suizid gewesen.
+
+Offizielle Entschuldigung, Danksagung und Rehabilitierung
+Ab etwa den späten 2000er Jahren unternahmen britische Bürger eine Reihe von öffentlichkeitswirksamen Aktivitäten, um das von Turing erlittene Unrecht bekannt zu machen und seine formale Rehabilitierung zu erreichen, also einen Widerruf oder eine Aufhebung des damaligen Urteils. Dies führte im Jahr 2013 zum Erfolg.
+
+Im Jahr 2009 unterzeichneten rund 30.000 Briten eine bei der Regierung eingereichte Online-Petition, in der eine posthume Entschuldigung von der britischen Regierung gefordert wurde.[20] Der Initiator der Kampagne, der britische Programmierer John Graham-Cumming, regte an, Alan Turing eine Ritterwürde zu verleihen.[21][22] Am 10. September 2009 veröffentlichte der damalige britische Premierminister Gordon Brown eine Erklärung, in der er im Namen der britischen Regierung die Verfolgung Turings bedauerte und seinen außerordentlichen Beitrag während des Zweiten Weltkriegs würdigte. Dabei spielte er auch auf den strategischen Vorteil der Alliierten durch die Entschlüsselung der „Enigma“ an und unterstrich deren Bedeutung:
+
+„Es ist keine Übertreibung, wenn man sagt, dass ohne seinen herausragenden Beitrag die Geschichte des Zweiten Weltkriegs durchaus deutlich anders hätte verlaufen können. Er ist tatsächlich eine der wenigen hervorzuhebenden Personen, deren einzigartiger Beitrag half, den Kriegsverlauf zu wenden. Die tiefe Dankbarkeit, die wir ihm schulden, macht es daher umso grauenhafter, dass er derart inhuman behandelt wurde. Im Namen der britischen Regierung und all derer, die dank Alans Arbeiten in Freiheit leben, bin ich daher sehr stolz zu sagen: Es tut uns leid, Sie hatten so viel Besseres verdient.“
+
+– Gordon Brown, damaliger britischer Premierminister, 2009[20]
+Da die Strafverfolgung seiner sexuellen Ausrichtung damals gesetzeskonform war, wurde eine nachträgliche Aufhebung der Verurteilung Turings zunächst von offizieller Seite als unmöglich dargestellt. Noch 2012 weigerte sich die Regierung von Browns Nachfolger David Cameron, 49.000 Homosexuelle, die nach dem Criminal Law Amendment Act von 1885 verurteilt worden waren, postum zu rehabilitieren.[23]
+
+Im Jahr 2013 wurde bekannt, dass die britische Regierung nun doch die Absicht habe, Turing zu rehabilitieren. Das Oberhausmitglied John Sharkey, Baron Sharkey beantragte dies. Das konservative Mitglied des Oberhauses Tariq Ahmad, Baron Ahmad of Wimbledon kündigte die Zustimmung der Regierung an. Der Liberaldemokrat Sharkey hatte in den 1960er Jahren in Manchester Mathematik bei Turings einzigem Doktoranden Robin Gandy studiert. Eine dritte Lesung des Antrags beraumte die Regierung für Ende Oktober an.[23][24]
+
+Am 24. Dezember 2013 wurde Alan Turing durch ein allein dem Monarchen zustehendes besonderes Gnadenrecht begnadigt, dem sogenannten Royal Pardon. Justizminister Chris Grayling hatte diese Begnadigung bei Elisabeth II. beantragt. Turing gilt damit auch als offiziell rehabilitiert.[25]
+
+Im April 2016 entschuldigte sich Robert Hannigan, der damalige Leiter des britischen Geheimdienstes GCHQ, für die Behandlung von Homosexuellen durch seine Institution und bezog dies ausdrücklich auf Alan Turing.[26]
+
+Nachwirkungen der Rehabilitierung
+Anfang 2015 verlangten Mitglieder der Familie Alan Turings unter weiterer, teils prominenter Unterstützung (Stephen Fry, Turing-Darsteller Benedict Cumberbatch) in einer Petition an das britische Parlament die Rehabilitierung auch aller anderen der in England unter den Homosexuellen-Gesetzen Verurteilten. Die Petition wurde von ca. 500.000 Personen unterschrieben und sollte von Turings Großneffen Nevil Hunt und der Großnichte Rachel Barns überreicht werden.[27]
+
+Am 21. Oktober 2016 lehnte das britische Parlament einen Gesetzesentwurf ab, der eine Rehabilitierung in Form einer generellen Rehabilitierung aller lebenden, früher für Homosexualität verurteilten Personen vorsah. Dieser Gesetzesentwurf ging einigen zu weit, anderen nicht weit genug.[28] Am 31. Januar 2017 wurde von Königin Elisabeth II. ein Gesetz in Kraft gesetzt, das aufbauend auf der Begnadigung von Turing allen Männern die Strafe aufhebt, falls zu dem Zeitpunkt beide über 16 Jahre alt waren, als sie den geahndeten Akt in gegenseitigem Einvernehmen vollzogen. Ausgenommen sind weiterhin Verurteilungen wegen homosexueller Handlungen in öffentlichen Toiletten. Das Gesetz schließt auch bereits verstorbene Personen ein. Ein noch lebender Betroffener kann beantragen, dass die Strafe aus seiner polizeilichen Führungsakte gestrichen wird, und Historiker können darauf hinweisen, dass eine Verurteilung verstorbener Personen nach geltendem Recht ungültig ist. Das Gesetz, das von Justizminister Sam Gyimah als „Turings Gesetz“ bezeichnet wurde, ist eine Ergänzung zum Policing and Crime Act und nimmt keinen Bezug auf andere Gesetze, unter denen homosexuelle Handlungen verfolgt werden konnten. Von Michael Cashman, einem der Initiatoren des Gesetzes, wurden jedoch weitere Vereinbarungen abgesichert, die einen entsprechend umfassenden Straferlass für alle homosexuellen Handlungen ermöglichen.[29]
+
+Postume Ehrungen
+
+Statue von Turing an der University of Surrey
+Am 23. Juni 1998, der Turings 86. Geburtstag gewesen wäre, wurde eine Blaue Plakette (English Heritage Blue Plaque) an seinem Geburtshaus in Warrington Crescent, London, enthüllt.[30]
+
+Am 2. März 1999 wurde der Asteroid (10204) Turing nach ihm benannt.
+
+Eine Turing-Statue wurde am 23. Juni 2001 in Manchester enthüllt. Sie steht im Sackville Park, zwischen den wissenschaftlichen Gebäuden der Universität Manchester und dem bei Homosexuellen beliebten Viertel der Canal Street.
+
+An seinem 50. Todestag, dem 7. Juni 2004, wurde zum Gedenken an Turings frühzeitigen Tod eine Tafel an seinem früheren Haus „Hollymeade“ in Wilmslow enthüllt.
+
+Der Turing Award wird jährlich von der Association for Computing Machinery an Personen verliehen, die bedeutende Beiträge zur Informatik geleistet haben. Er wird weithin als „Nobelpreis“ der Informatik angesehen.
+
+Der Bletchley Park Trust hat am 19. Juni 2007 eine Statue Turings in Bletchley Park enthüllt. Die Skulptur wurde von Stephen Kettle gestaltet, der als Material für sein Kunstwerk walisischen Schiefer verwendete.[31]
+
+Im „Turing-Jahr 2012“ fanden zu Alan Turings hundertstem Geburtstag weltweit Veranstaltungen zur Würdigung seiner Leistungen und zum Gedenken daran statt.[32]
+
+Im Jahr 2014 wurde er in die Hall of Honor (Ehrenhalle) des US-Geheimdienstes NSA (National Security Agency) aufgenommen.[33]
+
+Verschiedenes
+
+Gedenktafel an Turings Haus
+Alan Turing war ein hervorragender Langstreckenläufer. Von 1946 an startete er bei Wettkämpfen für den Walton Athletic Club. Bei den englischen Meisterschaften im Marathon 1947 wurde er Fünfter in 2:46:03 h, nur gut fünf Minuten langsamer als die Zeit, mit der sich Stan Jones beim Polytechnic Marathon des folgenden Jahres (bei dem Turing verletzt fehlte) als dritter britischer Mann hinter Jack Holden und Tom Richards für den Marathon der Olympischen Spiele 1948 in London qualifizierte. 1950 musste Turing wegen einer Beinverletzung seine Sportkarriere beenden.[34][35][36]
+Angeblich hat sich Apple beim Design seines Logos, eines angebissenen Apfels (ursprünglich in Regenbogenfarben), vom Tod des Computerpioniers Turing inspirieren lassen. Diese Annahme wurde jedoch von Steve Jobs mit den Worten widerlegt, dass er wünschte, damals daran gedacht zu haben, er es aber nicht habe.[37] Apple hatte die Legende im Sinn, nach der Isaac Newton zu seiner Gravitationstheorie inspiriert worden sein soll, als ihm ein Apfel auf den Kopf fiel.[38] Der Logo-Designer Rob Janoff meinte, der Biss sei lediglich als Größenmaßstab hinzugefügt worden, um etwa eine Verwechslung mit einer Kirsche auszuschließen.[39]
+In seinen Lebenserinnerungen berichtet der Computerpionier Heinz Billing vom Max-Planck-Institut für Physik (München), dass sich Alan Turing und Konrad Zuse 1947 in Göttingen getroffen haben. In Form eines Kolloquiums befragten britische Fachleute (neben Turing u. a. John R. Womersley und Arthur Porter) deutsche Wissenschaftler wie Zuse, Billing, Alwin Walther und Helmut Schreyer.[40]
+2012 wurde im Heinz Nixdorf MuseumsForum in Paderborn zu Ehren von Turing ein einjähriger Zyklus von Ausstellungen unter dem Titel Genial & Geheim gezeigt.[41]
+Berichte von Bekannten über ihn sind teilweise skurril: Er habe seine Teetasse immer mit einem Fahrradschloss an seine Heizung gekettet und sei mit zweckentfremdeter Gasmaske Fahrrad gefahren, um sich gegen seinen Heuschnupfen beim Fahrradfahren zu schützen. Bewohner des Örtchens Bletchley erschraken darüber und glaubten bei seinem Anblick an einen deutschen Giftgasangriff.[42]
+Am Institut für Informatik der Westfälischen Wilhelms-Universität in Münster wurden gegen Ende des ersten Jahrzehnts der 2000er Jahre von Achim Clausing zwei Originaldrucke der bedeutendsten Veröffentlichungen Turings im Nachlass von Heinrich Scholz entdeckt,[43] wovon eine seit 1945 verschollen gewesen war.[44] Es handelt sich um die Arbeit On Computable Numbers, with an Application to the „Entscheidungsproblem“ von 1936, die Scholz noch im selben Jahr mit einer Postkarte von Turing erbeten hatte.[44] Auf Basis dieser Arbeit hielt Scholz nach Clausings Aussage „das weltweit erste Seminar über Informatik“.[44] Die zweite Arbeit stammt aus dem Jahr 1950 und ist eine Abhandlung über die Entwicklung der künstlichen Intelligenz, die Turing mit einem handschriftlichen Kommentar versah: „Dies ist wohl mein letztes Exemplar“.[44][45] Bei Sotheby’s wurden vergleichbare Drucke Turings, die keine Widmung aufwiesen, für 180.000 Euro versteigert.[44]
+2017 wurde eine bis dahin unbekannte Sammlung von 147 Briefen von Turing entdeckt. Eine weitere Sammlung mit 141 Briefen wurde darüber hinaus im gleichen Jahr in einem Aktenschrank in einem Lagerraum der Universität Manchester aufgefunden. Die Briefe stammen aus den Jahren 1949 bis 1954. Die an der Universität Manchester entdeckten Briefe behandeln überwiegend seine Forschungsarbeit und wurden vom Archiv der Universität übernommen;[46] sie sind im Internet einsehbar.[47]
+Im Juli 2019 gab die Bank of England bekannt, dass auf der ab Ende 2021 in Umlauf kommenden neuen 50-Pfund-Note das Bild von Turing und sein Zitat „This is only a foretaste of what is to come, and only the shadow of what is going to be.“ zu sehen sein wird.[48]
+Werke
+Veröffentlichungen
+Wichtige Veröffentlichungen

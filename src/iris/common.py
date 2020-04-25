@@ -48,7 +48,8 @@ def check_test_samples(test_samples, classifier):
     for entry in test_samples:
         if classifier.is_classified(entry):
             correct += 1
-    print("Test:", correct, "/", len(test_samples), "correct (", correct / len(test_samples) * 100, "%)")
+    fraction = correct / len(test_samples)
+    print("Test:", correct, "/", len(test_samples), "correct", "{:.1%}".format(fraction))
 
 
 def check_entered_samples(classifier):
