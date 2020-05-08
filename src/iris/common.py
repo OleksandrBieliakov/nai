@@ -1,11 +1,12 @@
 class Sample:
-    def __init__(self, attributes, decision=None, distance=None):
+    def __init__(self, attributes, decision=None, distance=None, cluster=None):
         self.attributes = attributes
         self.decision = decision
         self.distance = distance
+        self.cluster = cluster
 
     def __str__(self):
-        return str(self.attributes) + " " + str(self.decision) + " " + str(self.distance)
+        return str(self.attributes) + " " + str(self.decision) + " " + str(self.cluster)
 
     def __lt__(self, other):
         return self.distance < other.distance
